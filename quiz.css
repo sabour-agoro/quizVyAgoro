@@ -1,0 +1,38 @@
+body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fb7a7a;
+    }
+.container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+ h2 {
+      color: #333;
+    }
+label {
+      display: block;
+      margin: 8px 0;
+    }
+.question {
+      margin-bottom: 20px;
+    }
+#resultat {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+button {
+      padding: 10px 20px;
+      background: #193856;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+button:hover {
+      background: #939ca4;
+    }

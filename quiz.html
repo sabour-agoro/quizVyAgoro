@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="quiz.css">
+  <title>Quiz - Le Sens</title>
+  <script src="quiz.js" defer></script>
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Quiz de culture générale</h2>
+
+    <label for="identifiant">Ton identifiant :</label>
+    <input type="text" id="identifiant" required>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Quelle est la capitale du Togo ?</p>
+        <label><input type="radio" name="q1" value="Lomé"> Lomé</label>
+        <label><input type="radio" name="q1" value="Kara"> Kara</label>
+        <label><input type="radio" name="q1" value="Accra"> Accra</label>
+      </div>
+
+      <div class="question">
+        <p>2.Le togo est-il en afrique de l'ouest?</p>
+        <label><input type="radio" name="q2" value="1914"> oui </label>
+        <label><input type="radio" name="q2" value="1939"> non</label>
+        <label><input type="radio" name="q2" value="1960"> je sait pas </label>
+      </div>
+
+      <div class="question">
+        <p>3. Qui est le PCM du togo?</p>
+        <label><input type="radio" name="q3" value="Faure"> Faure</label>
+        <label><input type="radio" name="q3" value="EPIPHANE"> EPIPHANE</label>
+        <label><input type="radio" name="q3" value="Sabour"> Sabour</label>
+      </div>
+
+      <button type="submit">Soumettre</button>
+    </form>
+
+    <div id="resultat"></div>
+  </div>
+</body>
+</html>
