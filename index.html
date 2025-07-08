@@ -71,6 +71,20 @@
         Identifiant : <strong>${identifiant}</strong><br>
         Résultat : <strong>${score} / ${total}</strong> bonnes réponses.
       `;
+      // Après le calcul du score :
+    fetch('TON_URL_DEPLOIEMENT_GOOGLE_SCRIPT', {
+  method: 'POST',
+  body: JSON.stringify({
+    Identifiant: Sdentifiant,
+    Score: score
+  }),
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+.then(response => console.log("Données envoyées"))
+.catch(error => console.error("Erreur d'envoi :", error));
+
     });    
   </script>
   
